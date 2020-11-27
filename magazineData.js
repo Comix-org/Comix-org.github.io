@@ -19,6 +19,6 @@ var magazineData = [
 		author: "Avaneesh",
 		fileName: "TheManAndTheDog.pdf",
 		issue: "1",
-		name: "The Man an The Dog",
+		name: "The Man and The Dog",
 	}
 ];
