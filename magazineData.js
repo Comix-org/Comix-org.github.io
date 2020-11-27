@@ -20,5 +20,17 @@ var magazineData = [
 		fileName: "TheManAndTheDog.pdf",
 		issue: "1",
 		name: "The Man and The Dog",
+	},
+	{
+		author: "Aahan",
+		fileName: "TheElephantAndTheDoctor.pdf",
+		issue: 1,
+		name: "Laughs- The ELephant & THe Doctor"
+	},
+	{
+		author: "Aahan",
+		fileName: "OctoInk.pdf",
+		issue: "2",
+		name: "Laughs- OctoInk"
 	}
 ];
