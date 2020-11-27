@@ -25,7 +25,7 @@ var magazineData = [
 		author: "Aahan",
 		fileName: "TheElephantAndTheDoctor.pdf",
 		issue: 1,
-		name: "Laughs- The ELephant & THe Doctor"
+		name: "Laughs- The Elephant & The Doctor"
 	},
 	{
 		author: "Aahan",
