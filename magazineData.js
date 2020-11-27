@@ -14,5 +14,11 @@ var magazineData = [
 		fileName: "XanterEp1.pdf",
 		issue: "1",
 		name: "Xanter - The Clumsy Antivirus",
+	},
+	{
+		author: "Avaneesh",
+		fileName: "TheManAndTheDog.pdf",
+		issue: "1",
+		name: "The Man and The Dog",
 	}
 ];
