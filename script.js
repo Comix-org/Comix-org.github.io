@@ -6,7 +6,7 @@ for(var i = 0; magazineData.length; i++){
 	var icon = $("<img>");
 	icon.attr("src", "comicIcon.jpeg");
 	icon.addClass("iconImg");
-	var filePath = "Magazines/"+magazineData[i].fileName;
+	var filePath = magazineData[i].fileName;
 	var newFile = $("<a></a>");
 	newFile.attr("href", filePath);
 	var starImgID = "UnavoritedStar.png";
