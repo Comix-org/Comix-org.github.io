@@ -1,0 +1,28 @@
+.iconImg{
+	margin: 0;
+	padding: 0;
+	width: 4rem;
+	border: solid 1px black;
+}
+.pdfFile{
+	cursor: pointer;
+	display: inline;
+}
+.fileContainer{
+	display: inline;
+	margin: 1rem;
+	float: left;
+	width: 80px;
+	word-wrap: break-word;
+}
+.profile-pic{
+	height: 70px;
+	border-radius: 100rem;
+	margin: 10px;
+}
+.starBtn{
+	cursor: pointer;
+	width: 100px;
+	margin: 10px;
+	margin-left: 0;
+}
