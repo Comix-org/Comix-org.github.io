@@ -13,7 +13,7 @@ for(var i = 0; magazineData.length; i++){
 	if(favorited.indexOf(magazineData[i]) > -1){
 		starImgID = "FavoritedStar.png";
 	}
-	newFile.html("<div class='pdfFile'><img src='comicIcon.jpeg' class='iconImg'><p>"+magazineData[i].name+"<br>Issue "+magazineData[i].issue+"<br>By "+magazineData[i].author+"</p><div>");
+	newFile.html("<div class='pdfFile'><img src='comixIcon2.jpeg' class='iconImg'><p>"+magazineData[i].name+"<br>Issue "+magazineData[i].issue+"<br>By "+magazineData[i].author+"</p><div>");
 	newFile.attr("target", "_blank");
 	newFile.attr("rel", "noopener noreferrer");
 	var containerDiv = $("<div></div>");
