@@ -32,5 +32,11 @@ var magazineData = [
 		fileName: "OctoInk.pdf",
 		issue: "2",
 		name: "Laughs- OctoInk"
+	},
+	{
+		author: "Aahan",
+		fileName: "SuperBoyEp1.pdf",
+		issue: "1",
+		name: "SuperBoy - Playing With A Thief,"
 	}
 ];
