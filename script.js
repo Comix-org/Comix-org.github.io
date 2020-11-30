@@ -4,7 +4,7 @@ if(localStorage.getItem("MyFavoriteComix") === null){
 var favorited = JSON.parse(localStorage.getItem("MyFavoriteComix"));
 for(var i = 0; magazineData.length; i++){
 	var icon = $("<img>");
-	icon.attr("src", "comicIcon.jpeg");
+	icon.attr("src", "comixIcon2.png");
 	icon.addClass("iconImg");
 	var filePath = magazineData[i].fileName;
 	var newFile = $("<a></a>");
