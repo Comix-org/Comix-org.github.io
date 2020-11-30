@@ -3,9 +3,6 @@ if(localStorage.getItem("MyFavoriteComix") === null){
 }
 var favorited = JSON.parse(localStorage.getItem("MyFavoriteComix"));
 for(var i = 0; magazineData.length; i++){
-	var icon = $("<img>");
-	icon.attr("src", "ComixIcon2.png");
-	icon.addClass("iconImg");
 	var filePath = magazineData[i].fileName;
 	var newFile = $("<a></a>");
 	newFile.attr("href", filePath);
@@ -13,7 +10,7 @@ for(var i = 0; magazineData.length; i++){
 	if(favorited.indexOf(magazineData[i]) > -1){
 		starImgID = "FavoritedStar.png";
 	}
-	newFile.html("<div class='pdfFile'><img src='comixIcon2.png' class='iconImg'><p>"+magazineData[i].name+"<br>Issue "+magazineData[i].issue+"<br>By "+magazineData[i].author+"</p><div>");
+	newFile.html("<div class='pdfFile'><img src='ComixIcon2.png' class='iconImg'><p>"+magazineData[i].name+"<br>Issue "+magazineData[i].issue+"<br>By "+magazineData[i].author+"</p><div>");
 	newFile.attr("target", "_blank");
 	newFile.attr("rel", "noopener noreferrer");
 	var containerDiv = $("<div></div>");
