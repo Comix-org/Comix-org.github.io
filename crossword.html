@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Comix.org - Free, E - Comics, Anytime, Anywhere!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body id="page">
+  <!--Navbar start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-fixed-top">
+      <a class="navbar-brand" href="index.html"><img src="Logo.png" style="height: 50px"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="readMagazines.html">Read Magazines</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              More
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="ourTeam.html">Our Team</a>
+              <a class="dropdown-item" href="privacyPolicy.html">Privacy Policy</a>
+              <!-- <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">My Favorite Magazines</a> -->
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="crossword.html">Daily Crossword</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+  </nav>
+  <!--Navbar end-->
+  <div class="jumbotron">
+    <h1 class="display-4">Daily Crossword</h1>
+    <p class="lead">A crossword a day is good for you, they say.<br>Our Daily Crosword is updated every day, so every 24 hours you can try out a new crossword!</p>
+    <hr class="my-4">
+    <p>Take a screenshot and print it, or solve it on the computer itself! And in case you don't know the answers, you can always click to show/hide the solution!</p>
+    <a class="btn btn-primary btn-lg" href="" role="button" onclick="alert('It\'s right there, just scroll down.')">Try it out below 👇</a>
+  </div>
+  <div id="canvasDiv">
+      <canvas id="canvas" width="600" height="600"></canvas>
+  </div>
+  <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script> 
+ 
+ <script>
+    var sketchProc = function(processingInstance) {
+     with (processingInstance) {
+        size(600, 600); 
+        frameRate(100);
+
+        if(width !== 600 || height !== 600){
+            throw {message: "Either the width or the height of the canvas is not proper. It should be 600 pixels by 600 pixels."};
+        }
+        var grid = [
+            "CAMEL#####",
+            "###L#####F",
+            "###EMU###R",
+            "###P#####U",
+            "###H#####I",
+            "##EATER##T",
+            "###N#A###B",
+            "###TIGER#A",
+            "#####L#ANT",
+            "#HORSE#T##"
+        ];
+        var clues = [
+            {
+                name: "Ship of the desert(5)",
+                number: 1,
+                type: "Across"
+            },
+            {
+                name: "Second largest living bird by height(3)",
+                number: 3,
+                type: "Across"
+            },
+            {
+                name: "A creature that eats ants: Ant_____(5)",
+                number: 4,
+                type: "Across"
+            },
+            {
+                name: "National Animal of India(5)",
+                number: 5,
+                type: "Across"
+            },
+            {
+                name: "Hardworking insect(3)",
+                number: 9,
+                type: "Across"
+            },
+            {
+                name: "_____ Racing is a sport(5)",
+                number: 6,
+                type: "Across"
+            },
+            {
+                name: "Largest land animal(8)",
+                number: 2,
+                type: "Down"
+            },
+            {
+                name: "Bird with extermely good eyesight(5)",
+                number: 7,
+                type: "Down"
+            },
+            {
+                name: "Rodent(3)",
+                number: 8,
+                type: "Down"
+            },
+            {
+                name: "Fruit-eating flying mammal(8)",
+                number: 10,
+                type: "Down"
+            }
+        ];
+        var numbers = [
+            {
+                string: 0,
+                index: 0
+            },
+            {
+                string: 0,
+                index: 3
+            },
+            {
+                string: 2,
+                index: 3
+            },
+            {
+                string: 5,
+                index: 2
+            },
+            {
+                string: 7,
+                index: 3
+            },
+            {
+                string: 9,
+                index: 1
+            },
+            {
+                string: 5,
+                index: 5
+            },
+            {
+                string: 7,
+                index: 7
+            },
+            {
+                string: 8,
+                index: 7
+            },
+            {
+                string: 1,
+                index: 9
+            }
+        ];
+        stroke(0);
+        strokeWeight(1);
+        if(grid.length !== 10){
+            throw {message: "The crossword grid is not proper."};
+        }
+        for(var i = 0; i < grid.length; i++){
+            if(grid[i].length !== 10){
+                throw {message: "The crossword grid is not proper. It should be 10 by 10."};
+            }
+            for(var j = 0; j < grid[i].length; j++){
+                
+                switch(grid[i][j]){
+                    case "#":
+                        fill(0);
+                        break;
+                    default:
+                        fill(255);
+                        
+                }
+                var square = {
+                    string: i,
+                    index: j
+                };
+                rect(j*60, i*60, 60, 60);
+            }
+        }
+        fill(0);
+        textAlign(LEFT, TOP);
+        textSize(12);
+        for(var i = 0; i < numbers.length; i++){
+            text(i+1, numbers[i].index*60+5, numbers[i].string*60+5);
+        }
+
+        var unfilledGrid = get(0, 0, width, height);
+        background(255, 255, 255);
+        textAlign(CENTER, CENTER);
+        textSize(50);
+        for(var i = 0; i < grid.length; i++){
+            if(grid[i].length !== 10){
+                throw {message: "The crossword grid is not proper. It should be 10 by 10."};
+            }
+            for(var j = 0; j < grid[i].length; j++){
+                
+                switch(grid[i][j]){
+                    case "#":
+                        fill(0, 0, 0);
+                        break;
+                    default:
+                        fill(255);
+                }
+                var square = {
+                    string: i,
+                    index: j
+                };
+                rect(j*60, i*60, 60, 60);
+                fill(0);
+                if(grid[i][j] !== "#"){
+                    text(grid[i][j], j*60+30, i*60+30);
+                }
+            }
+        }
+        fill(0);
+        textAlign(LEFT, TOP);
+        textSize(12);
+        for(var i = 0; i < numbers.length; i++){
+            text(i+1, numbers[i].index*60+5, numbers[i].string*60+5);
+        }
+
+        var filledGrid = get(0, 0, width, height);
+        var showAnswers = false;
+
+        fill(0);
+
+        var across = [];
+        var down = [];
+
+        for(var i = 0; i < clues.length; i++){
+            if(clues[i].type === "Across"){
+                across.push(clues[i]);
+            }
+            if(clues[i].type === "Down"){
+                down.push(clues[i]);
+            }
+        }
+
+        draw = function() {
+            background(255);
+            textAlign(LEFT, TOP);
+            if(showAnswers){
+                image(filledGrid, 100, 0, 400, 400);
+            }else{
+                image(unfilledGrid, 100, 0, 400, 400);
+            }
+            textSize(15);
+            for(var i = 0; i < across.length; i++){
+                text(across[i].number+". "+across[i].name, 20, 440+i*20);
+            }
+            for(var i = 0; i < down.length; i++){
+                text(down[i].number+". "+down[i].name, 320, 440+i*20);
+            }
+            textAlign(CENTER, CENTER);
+            textSize(25);
+            text("Across", 150, 425);
+            text("Down", 450, 425);
+        };
+
+        mousePressed = function(){
+            showAnswers = !showAnswers;
+        };
+
+
+
+
+
+
+
+
+
+
+    }};
+
+    // Get the canvas that Processing-js will use
+    var canvas = document.getElementById("canvas"); 
+    // Pass the function sketchProc (defined in myCode.js) to Processing's constructor.
+    var processingInstance = new Processing(canvas, sketchProc); 
+  </script>
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
