@@ -37,12 +37,18 @@ var magazineData = [
 		author: "Aahan",
 		fileName: "SuperBoyEp1.pdf",
 		issue: "1",
-		name: "SuperBoy - Playing With A Thief,"
+		name: "SuperBoy - Playing With A Thief"
 	},
 	{
 		author: "Avaneesh",
 		fileName: "ManAndTheDog2.pdf",
 		issue: "2",
 		name: "The Man and The Dog"
+	},
+	{
+		author: "Aahan",
+		fileName: "SuperBoyEp2.pdf",
+		issue: "1",
+		name: "SuperBoy - Stealing Santa"
 	}
 ];
