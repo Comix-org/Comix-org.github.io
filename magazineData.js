@@ -25,13 +25,13 @@ var magazineData = [
 		author: "Aahan",
 		fileName: "TheElephantAndTheDoctor.pdf",
 		issue: 1,
-		name: "Laughs- The Elephant & The Doctor"
+		name: "Laughs - The Elephant & The Doctor"
 	},
 	{
 		author: "Aahan",
 		fileName: "OctoInk.pdf",
 		issue: "2",
-		name: "Laughs- OctoInk"
+		name: "Laughs - OctoInk"
 	},
 	{
 		author: "Aahan",
@@ -50,5 +50,11 @@ var magazineData = [
 		fileName: "SuperBoyEp2.pdf",
 		issue: "1",
 		name: "SuperBoy - Stealing Santa"
+	},
+	{
+		author: "Aahan",
+		fileName: "FractionsMixUp.pdf",
+		issue: "3",
+		name: "Laughs- Muddled Fractions"
 	}
 ];
