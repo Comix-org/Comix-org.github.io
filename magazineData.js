@@ -55,6 +55,6 @@ var magazineData = [
 		author: "Aahan",
 		fileName: "FractionsMixUp.pdf",
 		issue: "3",
-		name: "Laughs- Muddled Fractions"
+		name: "Laughs - Muddled Fractions"
 	}
 ];
