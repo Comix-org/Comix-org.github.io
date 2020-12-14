@@ -4,4 +4,5 @@ This is the Comix.org website. We are a nonprofit organization and we make comic
 MILESTONES:
 
 -> Started - 25th November 2020
+
 -> 10 comics - 14th December 2020
