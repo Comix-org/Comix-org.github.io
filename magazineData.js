@@ -56,5 +56,16 @@ var magazineData = [
 		fileName: "FractionsMixUp.pdf",
 		issue: "3",
 		name: "Laughs - Muddled Fractions"
-	}
+	},
+	{
+		author: "Aahan",
+		fileName: "Covid-19@School.pdf",
+		issue: "4",
+		name: "Laughs - Covid@School"
+	},{
+		author: "Aahan",
+		fileName: "FullMarks.pdf",
+		issue: "5",
+		name: "Laughs - Full Marks!"
+	},
 ];
