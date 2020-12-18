@@ -68,4 +68,10 @@ var magazineData = [
 		issue: "5",
 		name: "Laughs - Full Marks!"
 	},
+	{
+		author: "Avaneesh",
+		fileName: "SpecialEdition1.pdf",
+		issue: "1",
+		name: "DECEMBER SPECIAL EDITION"
+	}
 ];
