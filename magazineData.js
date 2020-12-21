@@ -78,6 +78,6 @@ var magazineData = [
 		author: "Avaneesh",
 		fileName: "MiniMix.pdf",
 		issue: "1",
-		name: "MiniMix - Sleepy Computers"
+		name: "MiniMix- Sleepy Computers"
 	}
 ];
