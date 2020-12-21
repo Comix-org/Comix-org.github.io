@@ -73,5 +73,11 @@ var magazineData = [
 		fileName: "SpecialEdition1.pdf",
 		issue: "1",
 		name: "DECEMBER SPECIAL EDITION"
+	},
+	{
+		author: "Avaneesh",
+		fileName: "MiniMix.pdf",
+		issue: "1",
+		name: "MiniMix - Sleepy Computers"
 	}
 ];
