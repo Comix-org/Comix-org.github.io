@@ -8,3 +8,5 @@ MILESTONES:
 -> 10 comics - 14th December 2020
 
 -> Started Monthly Special Editions - 18th December 2020
+
+-> 5 Different Series - 18th December 2020
