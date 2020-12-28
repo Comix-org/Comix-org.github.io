@@ -31,7 +31,7 @@ var magazineData = [
 		author: "Aahan",
 		fileName: "OctoInk.pdf",
 		issue: "2",
-		name: "Laughs - OctoInk"
+		name: "Laughs - OctoInky"
 	},
 	{
 		author: "Aahan",
