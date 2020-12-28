@@ -79,5 +79,11 @@ var magazineData = [
 		fileName: "MiniMix.pdf",
 		issue: "1",
 		name: "MiniMix - Sleepy Computers"
+	},
+	{
+		author: "Aahan",
+		fileName: "PartsOfTheComputer.pdf",
+		issue: "6",
+		name: "Laughs - Parts of the Computer"
 	}
 ];
