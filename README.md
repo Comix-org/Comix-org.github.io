@@ -10,3 +10,5 @@ MILESTONES:
 -> Started Monthly Special Editions - 18th December 2020
 
 -> 5 Different Series - 18th December 2020
+
+-> Update website completely - 31st December 2020
