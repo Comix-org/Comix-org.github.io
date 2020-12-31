@@ -1,32 +1,43 @@
-.iconImg{
-	margin: 0;
-	padding: 0;
-	width: 4rem;
-	border: solid 1px black;
-}
-.pdfFile{
-	cursor: pointer;
-	display: inline;
-}
-.fileContainer{
-	display: inline;
-	margin: 1rem;
-	float: left;
-	width: 80px;
-	word-wrap: break-word;
+.comixIconImg{
+	height: 60px;
 }
 .profile-pic{
 	height: 70px;
 	border-radius: 100rem;
 	margin: 10px;
 }
-.starBtn{
-	cursor: pointer;
-	width: 100px;
-	margin: 10px;
-	margin-left: 0;
-}
 #canvasDiv{
 	display: block;
 	text-align: center;
+}
+tr{
+	background-color: rgb(240, 240, 240);
+	border: none;
+	display: block;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	transition: all 0.25s ease-out;
+	color: #000;
+}
+tr:hover{
+	background-color: rgb(200, 200, 200);
+}
+tr:active{
+	transform: scale(1.03);
+}
+
+table{
+	width: 100%;
+}
+a:hover{
+	text-decoration: none !important;
+}
+tr td{
+	padding-right: 30px;
+}
+.searchSpan{
+	font-weight: 500;
+}
+select{
+	cursor: pointer;
 }
