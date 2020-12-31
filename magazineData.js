@@ -54,7 +54,7 @@ var magazineData = [
 	{
 		author: "Aahan",
 		fileName: "SuperBoyEp2.pdf",
-		issue: "1",
+		issue: "2",
 		name: "SuperBoy - Stealing Santa",
 		series: "SuperBoy",
 	},
