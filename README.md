@@ -11,4 +11,4 @@ MILESTONES:
 
 -> 5 Different Series - 18th December 2020
 
--> Update website completely - 31st December 2020
+-> Update website completely & first Mega Edition created - 31st December 2020
