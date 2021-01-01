@@ -98,5 +98,12 @@ var magazineData = [
 		issue: "6",
 		name: "Laughs - Parts of the Computer",
 		series: "Laughs"
+	},
+	{
+		author: "Avaneesh",
+		fileName: "comix.orgDecemberMegaEdition.pdf",
+		issue: "1",
+		name: "DECEMBER MEGA EDITION",
+		series: "Mega Editions"
 	}
 ];
