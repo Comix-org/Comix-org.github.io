@@ -105,5 +105,11 @@ var magazineData = [
 		issue: "1",
 		name: "DECEMBER MEGA EDITION",
 		series: "Mega Editions"
+	},
+	{
+		author: "Aahan",
+		fileName: "Hexdan_Intro.pdf",
+		issue: "Introduction",
+		name: "Hexdan the Super(silly)man - Introduction"
 	}
 ];
