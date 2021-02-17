@@ -110,6 +110,14 @@ var magazineData = [
 		author: "Aahan",
 		fileName: "Hexdan_Intro.pdf",
 		issue: "Introduction",
-		name: "Hexdan the Super(silly)man - Introduction"
+		name: "Hexdan the Super(silly)man - Introduction",
+		series: "Hexdan the Super(silly)man"
+	},
+	{
+		author: "Aahan",
+		fileName: "TheLawOfMasks.pdf",
+		issue: "7",
+		name: "Laughs - The Law of Masks",
+		series: "Laughs"
 	}
 ];
