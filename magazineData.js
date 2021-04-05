@@ -119,5 +119,12 @@ var magazineData = [
 		issue: "7",
 		name: "Laughs - The Law of Masks",
 		series: "Laughs"
-	}
+	},
+	{
+		author: "Avaneesh",
+		fileName: "manAndTheDog4.pdf",
+		issue: "4",
+		name: "The Man and The Dog",
+		series: "The Man and The Dog"
+	},
 ];
